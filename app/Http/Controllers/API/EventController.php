@@ -13,7 +13,7 @@ class EventController extends Controller
 {
     public function index()
     {
-        $data = Event::latest()->get();
+        $data = Event::orderby('event')->get();
         return response()->json([EventResource::collection($data), 'Event displayed.']);
     }
 

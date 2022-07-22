@@ -40,7 +40,6 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
         'api' => [
             'driver' => 'passport',
             'provider' => 'users',
@@ -113,5 +112,8 @@ return [
 
     'password_timeout' => 10800,
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 ];
