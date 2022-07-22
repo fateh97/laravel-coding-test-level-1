@@ -17,6 +17,8 @@ class CreateEventsTable extends Migration
             $table->uuid('id')->primary()->unique();
             $table->string('event')->nullable();
             $table->string('slug')->unique();
+            $table->dateTime('startDate');
+            $table->dateTime('endDate');
             $table->dateTime('created_at')->nullable('false');
             $table->dateTime('updated_at')->nullable('false');
         });
